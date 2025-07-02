@@ -2,11 +2,19 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Azzam Alshaye • CV</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Ensure PDF viewer background is white */
+      embed,
+      object {
+        background-color: #ffffff;
+      }
+    </style>
   </head>
   <body class="bg-gray-50 min-h-screen flex flex-col">
+    <!-- Header -->
     <header class="bg-white shadow py-6">
       <div class="max-w-4xl mx-auto px-4 text-center">
         <h1 class="text-3xl font-bold text-gray-800">My Résumé</h1>
@@ -22,27 +30,36 @@
       </div>
     </header>
 
-    <main class="flex-grow max-w-4xl mx-auto my-8 px-4">
-      <div class="w-full h-[80vh] border rounded-lg overflow-hidden">
+    <!-- Main content: embed fills remaining space -->
+    <main class="flex-grow max-w-4xl w-full mx-auto px-4 py-6 flex flex-col">
+      <div class="flex-grow border rounded-lg overflow-hidden shadow-lg">
+        <!-- Primary PDF embed -->
+        <embed
+          src="Azzam_Alshaye_CV.pdf#zoom=page-width"
+          type="application/pdf"
+          class="w-full h-full"
+        />
+        <!-- Fallback for browsers without embed support -->
         <object
-          data="Azzam_Alshaye_CV.pdf"
+          data="Azzam_Alshaye_CV.pdf#zoom=page-width"
           type="application/pdf"
           class="w-full h-full"
         >
-          <p class="p-4">
+          <p class="p-6 text-center text-gray-700">
             Your browser does not support embedded PDFs.
             <a
               href="Azzam_Alshaye_CV.pdf"
               target="_blank"
               rel="noopener noreferrer"
               class="text-sky-600 hover:underline"
-              >Click here to open the CV</a
+              >Open the CV</a
             >.
           </p>
         </object>
       </div>
     </main>
 
+    <!-- Footer -->
     <footer class="text-center py-6 text-sm text-gray-500">
       © 2025 Azzam Alshaye
     </footer>
