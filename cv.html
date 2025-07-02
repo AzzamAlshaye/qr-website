@@ -5,8 +5,15 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <title>Azzam Alshaye • CV</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+      }
+    </style>
   </head>
-  <body class="flex flex-col min-h-screen bg-gray-50 text-gray-800">
+  <body class="flex flex-col h-full bg-gray-50 text-gray-800">
     <!-- Header -->
     <header class="bg-white shadow-md py-6">
       <div class="max-w-4xl mx-auto px-4 text-center">
@@ -23,11 +30,11 @@
       </div>
     </header>
 
-    <!-- Main: flex container with min-h-0 to allow child to fill -->
-    <main
-      class="flex-1 flex flex-col min-h-0 max-w-4xl w-full mx-auto px-4 py-6"
-    >
-      <div class="flex-1 min-h-0 border rounded-lg overflow-hidden shadow-lg">
+    <!-- Main: flex-1 plus overflow-auto -->
+    <main class="flex-1 overflow-auto px-4 py-6">
+      <div
+        class="h-full w-full max-w-4xl mx-auto border rounded-lg overflow-hidden shadow-lg"
+      >
         <iframe
           src="Azzam_Alshaye_CV.pdf"
           class="w-full h-full"
