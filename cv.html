@@ -5,45 +5,128 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <title>Azzam Alshaye • CV</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-      html,
-      body {
-        height: 100%;
-        margin: 0;
-      }
-    </style>
   </head>
-  <body class="flex flex-col h-full bg-gray-50 text-gray-800">
-    <!-- Header -->
-    <header class="bg-white shadow-md py-6">
-      <div class="max-w-4xl mx-auto px-4 text-center">
-        <h1 class="text-3xl font-bold">My Résumé</h1>
-        <p class="text-gray-600 mt-1">Azzam Alshaye</p>
+  <body class="bg-gray-100 text-gray-800">
+    <!-- NAVIGATION -->
+    <nav class="bg-white shadow">
+      <div
+        class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center"
+      >
+        <a
+          href="index.html"
+          class="text-sky-600 hover:text-sky-800 font-medium"
+        >
+          ← Back to QR Codes
+        </a>
         <a
           href="Azzam_Alshaye_CV.pdf"
           target="_blank"
-          rel="noopener noreferrer"
-          class="inline-block mt-4 px-6 py-2 bg-sky-600 text-white font-medium rounded-lg hover:bg-sky-700 transition"
+          class="px-4 py-2 bg-sky-600 text-white rounded-lg hover:bg-sky-700 transition"
         >
-          View Fullscreen PDF
+          Full-Screen PDF
         </a>
       </div>
-    </header>
+    </nav>
 
-    <!-- Main: flex-1 plus overflow-auto -->
-    <main class="flex-1 overflow-auto px-4 py-6">
-      <div
-        class="h-full w-full max-w-4xl mx-auto border rounded-lg overflow-hidden shadow-lg"
-      >
-        <iframe
-          src="Azzam_Alshaye_CV.pdf"
-          class="w-full h-full"
-          frameborder="0"
-        ></iframe>
-      </div>
+    <!-- MAIN CONTENT -->
+    <main class="max-w-7xl mx-auto px-4 py-8 grid gap-8 lg:grid-cols-3">
+      <!-- INFO PANEL -->
+      <aside class="space-y-6 bg-white p-6 rounded-lg shadow-lg">
+        <div>
+          <h1 class="text-4xl font-bold">Azzam Alshaye</h1>
+          <p class="text-sky-600 font-semibold mt-1">Software Engineer</p>
+        </div>
+
+        <div class="space-y-2 text-sm">
+          <p>
+            <span class="font-medium">✉️ Email:</span>
+            <a
+              href="mailto:azzamalshaye@gmail.com"
+              class="text-sky-600 hover:underline"
+            >
+              azzamalshaye@gmail.com
+            </a>
+          </p>
+          <p>
+            <span class="font-medium">📞 Phone:</span>
+            <a href="tel:+966553014227" class="text-sky-600 hover:underline">
+              +966 55 301 4227
+            </a>
+          </p>
+          <p>
+            <span class="font-medium">📍 Location:</span>
+            Riyadh, Saudi Arabia
+          </p>
+          <p>
+            <span class="font-medium">🔗 LinkedIn:</span>
+            <a
+              href="https://www.linkedin.com/in/azzam-alshaye/"
+              target="_blank"
+              rel="noopener"
+              class="text-sky-600 hover:underline"
+            >
+              /in/azzam-alshaye
+            </a>
+          </p>
+        </div>
+
+        <div>
+          <h2 class="text-lg font-semibold">Skills</h2>
+          <div class="flex flex-wrap gap-2 mt-2">
+            <span class="px-2 py-1 bg-sky-100 text-sky-800 rounded-full text-sm"
+              >JavaScript</span
+            >
+            <span class="px-2 py-1 bg-sky-100 text-sky-800 rounded-full text-sm"
+              >React</span
+            >
+            <span class="px-2 py-1 bg-sky-100 text-sky-800 rounded-full text-sm"
+              >Tailwind CSS</span
+            >
+            <span class="px-2 py-1 bg-sky-100 text-sky-800 rounded-full text-sm"
+              >Node.js</span
+            >
+            <span class="px-2 py-1 bg-sky-100 text-sky-800 rounded-full text-sm"
+              >Flutter</span
+            >
+            <span class="px-2 py-1 bg-sky-100 text-sky-800 rounded-full text-sm"
+              >Firebase</span
+            >
+            <span class="px-2 py-1 bg-sky-100 text-sky-800 rounded-full text-sm"
+              >Bootstrap</span
+            >
+          </div>
+        </div>
+
+        <div>
+          <h2 class="text-lg font-semibold">Languages</h2>
+          <ul class="list-disc list-inside mt-2 text-sm">
+            <li>Arabic (Native)</li>
+            <li>English (Fluent)</li>
+          </ul>
+        </div>
+
+        <a
+          href="Azzam_Alshaye_CV.pdf"
+          download
+          class="block w-full text-center mt-4 px-4 py-2 bg-sky-600 text-white font-medium rounded-lg hover:bg-sky-700 transition"
+        >
+          Download PDF
+        </a>
+      </aside>
+
+      <!-- PDF EMBED -->
+      <section class="lg:col-span-2">
+        <div class="h-[75vh] bg-white rounded-lg overflow-hidden shadow-lg">
+          <iframe
+            src="Azzam_Alshaye_CV.pdf"
+            class="w-full h-full"
+            frameborder="0"
+          ></iframe>
+        </div>
+      </section>
     </main>
 
-    <!-- Footer -->
+    <!-- FOOTER -->
     <footer class="bg-white text-center py-4 text-sm text-gray-500">
       © 2025 Azzam Alshaye
     </footer>
